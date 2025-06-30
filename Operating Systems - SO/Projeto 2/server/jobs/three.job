@@ -1,0 +1,57 @@
+WRITE [(btc,98000)]
+WRITE [(eth,4000)]
+WRITE [(sol,200)(xrp,3)]
+
+WAIT 10000
+
+WRITE [(btc,99000)]
+WRITE [(eth,4100)]
+WRITE [(sol,170)(xrp,2)]
+
+WAIT 2000
+
+WRITE [(btc,99000)]
+WRITE [(eth,4100)]
+WRITE [(sol,170)(xrp,2)]
+
+WAIT 2000
+
+WRITE [(btc,100000)]
+WRITE [(eth,4300)]
+WRITE [(sol,200)(xrp,1)]
+
+WAIT 2000
+
+WRITE [(btc,102000)]
+WRITE [(eth,4800)]
+WRITE [(sol,300)(xrp,3)]
+
+WAIT 2000
+
+WRITE [(btc,104000)]
+WRITE [(eth,5000)]
+WRITE [(sol,400)(xrp,8)]
+
+WAIT 2000
+
+WRITE [(btc,104000)]
+WRITE [(eth,5200)]
+WRITE [(sol,800)(xrp,15)]
+
+WAIT 2000
+
+WRITE [(btc,104000)]
+WRITE [(eth,5200)]
+WRITE [(sol,800)(xrp,15)]
+
+WAIT 2000
+
+WRITE [(btc,104000)]
+WRITE [(eth,5200)]
+WRITE [(sol,800)(xrp,15)]
+
+WAIT 2000
+
+WRITE [(btc,104000)]
+WRITE [(eth,5200)]
+WRITE [(sol,800)(xrp,15)]

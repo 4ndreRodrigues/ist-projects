@@ -1,0 +1,19 @@
+WRITE [(a,anna)(b,bernardo)]
+WRITE [(d,dinis)(c,carlota)]
+WAIT 5000
+
+READ [x,z,l,v]
+SHOW
+BACKUP
+WRITE [(a,cachoco)(c,marmelada)]
+WRITE [(a,23)(c,234)]
+WRITE [(a,356)(c,54768)]
+WRITE [(a,5385)(c,777)]
+WRITE [(a,4574)(c,444)]
+WRITE [(b,111)(c,111)]
+WRITE [(a,cachoco)(c,marmelada)]
+DELETE [c]
+READ [c]
+WAIT 3000
+WRITE [(a,cachoco)(c,marmelada)]
+SHOW
