@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Retalhistas - Flask</title>
+</head>
+<body style="padding:20px">
+    <h1>Inserir Retalhista</h1>
+    <form action="execute_insert" method="post">
+        <label>TIN do retalhista</label>
+        <input type="text" name="tin" placeholder="TIN..."/>
+
+        <label>Nome do retalhista</label>
+        <input type="text" name="name" placeholder="Nome..."/>
+
+        <input type="submit" value="Inserir"/>
+        <input type= "button" onclick="goBack()" value= "Cancelar"/>
+    </form>
+</body>
+</html>
+<script>function goBack() {window.history.back();}</script>

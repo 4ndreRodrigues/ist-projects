@@ -1,0 +1,55 @@
+syntax = "proto3";
+package pt.ulisboa.tecnico.tuplespaces.contract.ReplicatedTupleSpaces;
+
+message PutRequest {
+  string newTuple = 1;
+}
+message PutResponse {}
+
+message ReadRequest {
+  string searchPattern = 1;
+}
+
+message ReadResponse {
+  string result = 1;
+}
+
+message TakeRequest {
+  string searchPattern = 1;
+  int32 clientId = 2;
+}
+message TakeResponse {
+  string result = 1;
+}
+
+message ReleaseRequest {
+  string searchPattern = 1;
+  int32 clientId = 2;
+}
+
+message ReleaseResponse {
+  string result = 1;
+}
+
+message ReqRequest {
+  string searchPattern = 1;
+  int32 clientId = 2;
+}
+
+message ReqResponse {
+  repeated string matchingTuples = 1;
+}
+
+message GetTupleSpacesStateRequest {}
+message GetTupleSpacesStateResponse {
+  repeated string tuple = 1;
+}
+
+service ReplicatedTupleSpaces {
+  rpc put(PutRequest) returns (PutResponse);
+  rpc read(ReadRequest) returns (ReadResponse);
+  rpc take(TakeRequest) returns (TakeResponse);
+  rpc release(ReleaseRequest) returns (ReleaseResponse);
+  rpc request(ReqRequest) returns (ReqResponse);
+  rpc getTupleSpacesState(GetTupleSpacesStateRequest) returns (GetTupleSpacesStateResponse);
+}

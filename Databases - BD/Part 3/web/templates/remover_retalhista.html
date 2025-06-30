@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Retalhistas - Flask</title>
+</head>
+<body style="padding:20px">
+
+<h1>Remover Retalhista</h1>
+<div>
+    <form action="perform_delete" method="post">
+        <input type= "hidden" name= "tin" value= "{{ params.get('tin') }}" />
+        <!-- funciona com name mas com tin nao?!-->
+
+        <label>TIN do Retalhista</label>
+        <input type="text" value= "{{ params.get('tin') }}" disabled/>
+
+        <label>Nome do Retalhista</label>
+        <input type="text" value= "{{ params.get('name') }}" disabled/>
+
+        <input type="submit" value="Remover"/> 
+        <input type= "button" onclick="goBack()" value= "Cancelar"/>
+    </form>
+</div>
+<script>function goBack() {window.history.back();}</script>
