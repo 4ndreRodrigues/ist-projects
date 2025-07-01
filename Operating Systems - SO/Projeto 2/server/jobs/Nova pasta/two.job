@@ -1,0 +1,14 @@
+WRITE [(a,edmundo)(f,felix)]
+WRITE [(a,yyyyyy)(f,felix)]
+WRITE [(g,gabriela)(h,helio)]
+WRITE [(a,356)(c,54768)]
+WRITE [(a,5385)(c,777)]
+WRITE [(a,4574)(c,444)]
+WRITE [(b,111)(c,111)]
+BACKUP
+DELETE [g]
+WRITE [(i,ignacio)(j,joana)]
+WRITE [(a,katia)(l,leonel)]
+WAIT 5000
+DELETE [a]
+BACKUP

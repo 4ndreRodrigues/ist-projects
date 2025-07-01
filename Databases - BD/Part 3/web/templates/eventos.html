@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Eventos Reposicao - Flask</title>
+</head>
+<body style="padding:20px">
+
+<h1>Eventos Reposicao IVM</h1>
+{% if cursor %}
+
+<table border="2px">
+    <thead>
+        <tr>
+            <th>EAN</th>
+            <th>Número</th>
+            <th>Número de Série</th>
+            <th>Fabricante</th>
+            <th>Instante</th>
+            <th>Unidades</th>
+            <th>TIN</th>
+        </tr>
+    </thead>
+    <tbody>
+        <div> 
+            <button onclick="window.location.href='menu'">Menu principal</button> 
+        </div>
+        {% for record in cursor %}
+            <tr>
+                <td>{{ record[0] }}</td>
+                <td>{{ record[1] }}</td>
+                <td>{{ record[2] }}</td>
+                <td>{{ record[3] }}</td>
+                <td>{{ record[4] }}</td>
+                <td>{{ record[5] }}</td>
+                <td>{{ record[6] }}</td>
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+{% else %}
+    <p> Erro: não foi possível obter dados da base de dados!</p>
+{% endif %}
+</body>
+</html>
+<script> function goBack() {window.history.back();} </script>
